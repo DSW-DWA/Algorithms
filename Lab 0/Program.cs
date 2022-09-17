@@ -34,6 +34,11 @@ namespace Lab0
                     Console.WriteLine("Всего делителей: "+ task2.AllDivisors());
                     Console.WriteLine("Простых делителей: "+ task2.PrimeDivisors());
                     break;
+                case 3:
+                    var task3 = new Task3();
+                    //Console.WriteLine(ta);
+                    task3.ReadData("data.txt");
+                    break;
             }
         }
     }
