@@ -1,30 +1,24 @@
 namespace Lab0 
 {
     class Task3
-    {
-        public int n 
-        {
-            get { return n;}
-            set { arr = new int[value]; n = value;}
-        }
-        
-        private int[] arr;
+    {   
+        private List<int> _arr;
 
         public int? FindMax(int l, int r)
         {
+            l -= 1;
+            r -= 1;
             if (l< 0) return null;
-            if (r >= n ) return null;
-            return arr.Skip(l).Take(r-l+1).Max();
+            if (r >= _arr.Count() ) return null;
+            return _arr.Skip(l).Take(r-l+1).Max();
         }
         public void ReadData(string name)
         {
             string path = @$"{name}";
             StreamReader sr = new StreamReader(path);
-            // var m = sr.ReadToEnd();
-            // foreach (var item in m)
-            // {
-            //     Console.Write(item + " ");
-            // }
+            _arr = new List<int>();
+            _arr = sr.ReadToEnd().Split("\n").Select(x => Convert.ToInt32(x)).ToList();
+            Console.WriteLine($"Записан массив размера {_arr.Count()}");
         }
     }
 }

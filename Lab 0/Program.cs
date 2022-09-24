@@ -36,8 +36,11 @@ namespace Lab0
                     break;
                 case 3:
                     var task3 = new Task3();
-                    //Console.WriteLine(ta);
                     task3.ReadData("data.txt");
+                    Console.WriteLine("Введите L и R");
+                    var l = Convert.ToInt32(Console.ReadLine());
+                    var r = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(task3.FindMax(l,r));
                     break;
             }
         }
