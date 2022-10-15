@@ -9,6 +9,8 @@ namespace Lab0
             l -= 1;
             r -= 1;
             if (l< 0) return null;
+            if (r< 0) return null;
+            if (l >= _arr.Count() ) return null;
             if (r >= _arr.Count() ) return null;
             return _arr.Skip(l).Take(r-l+1).Max();
         }
@@ -19,6 +21,7 @@ namespace Lab0
             _arr = new List<int>();
             _arr = sr.ReadToEnd().Split("\n").Select(x => Convert.ToInt32(x)).ToList();
             Console.WriteLine($"Записан массив размера {_arr.Count()}");
+            sr.Close();
         }
     }
 }
