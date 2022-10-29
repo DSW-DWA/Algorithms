@@ -5,21 +5,21 @@ namespace Lab2
         public List<ItemOfBackpack> AllItems { get; }
         public List<ItemOfBackpack> ItemsOfBackpack { get; }
         public int MaxWeight { get; }
-        private int[,] allCombinations;
+        private int[,] _allCombinations;
         public Backpack(List<ItemOfBackpack> all, int maxWeight)
         {
             AllItems = all;
             MaxWeight = maxWeight;
             ItemsOfBackpack = new List<ItemOfBackpack>();
-            allCombinations = new int[AllItems.Count()+1,MaxWeight+1];
+            _allCombinations = new int[AllItems.Count()+1,MaxWeight+1];
         }
         public void FindAnswer(int i, int j)
         {
-            if (allCombinations[i,j] == 0)
+            if (_allCombinations[i,j] == 0)
             {
                 return;
             }
-            if (allCombinations[i-1,j] == allCombinations[i,j])
+            if (_allCombinations[i-1,j] == _allCombinations[i,j])
             {
                 FindAnswer(i-1,j);
             }
@@ -33,12 +33,12 @@ namespace Lab2
         {
             for (var i = 0; i < AllItems.Count()+1; i++)
             {
-                allCombinations[i,0] = 0;
+                _allCombinations[i,0] = 0;
             }
 
             for (var i = 0; i < MaxWeight+1; i++)
             {
-                allCombinations[0,i] = 0;
+                _allCombinations[0,i] = 0;
             }
 
             for (var i = 1; i < AllItems.Count()+1; i++ )
@@ -47,11 +47,11 @@ namespace Lab2
                 {
                     if (j > AllItems[i-1].Weight)
                     {
-                        allCombinations[i,j] = Math.Max(allCombinations[i-1,j], allCombinations[i-1,j-AllItems[i-1].Weight]+AllItems[i-1].Price);
+                        _allCombinations[i,j] = Math.Max(_allCombinations[i-1,j], _allCombinations[i-1,j-AllItems[i-1].Weight]+AllItems[i-1].Price);
                     }
                     else 
                     {
-                        allCombinations[i,j] = allCombinations[i-1,j];
+                        _allCombinations[i,j] = _allCombinations[i-1,j];
                     }
                 }
             }
