@@ -14,6 +14,40 @@ namespace Lab2
 
                 switch(taskNum)
                 {
+                    case "1":
+                    {
+                        var FN = new FibonacciNumbers(35);
+                        var start = DateTime.Now;
+                        FN.Bine(35);
+                        var finish = DateTime.Now;
+                        var timeWork = finish - start;
+                        Console.WriteLine($"Time work of Bine: {timeWork.Ticks}");
+
+                        start = DateTime.Now;
+                        FN.DynamicDown(35);
+                        finish = DateTime.Now;
+                        timeWork = finish - start;
+                        Console.WriteLine($"Time work of DynamicDown: {timeWork.Ticks}");
+
+                        start = DateTime.Now;
+                        FN.DynamicUp(35);
+                        finish = DateTime.Now;
+                        timeWork = finish - start;
+                        Console.WriteLine($"Time work of DynamicUp:{timeWork.Ticks}");
+
+                        start = DateTime.Now;
+                        FN.DivideAndConquer(35);
+                        finish = DateTime.Now;
+                        timeWork = finish - start;
+                        Console.WriteLine($"Time work of DivideAndConquer:{timeWork.Ticks}");
+
+                        start = DateTime.Now;
+                        FN.Iterationnal(35);
+                        finish = DateTime.Now;
+                        timeWork = finish - start;
+                        Console.WriteLine($"Time work of Iterationnal:{timeWork.Ticks}");
+                        break;
+                    }
                     case "2":
                     {
                         Console.WriteLine("Enter the max weight of backpack. (integer number)");
