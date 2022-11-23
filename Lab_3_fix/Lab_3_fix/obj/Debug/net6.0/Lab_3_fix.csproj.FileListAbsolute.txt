@@ -1,0 +1,15 @@
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\bin\Debug\net6.0\Lab_3_fix.exe
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\bin\Debug\net6.0\Lab_3_fix.deps.json
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\bin\Debug\net6.0\Lab_3_fix.runtimeconfig.json
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\bin\Debug\net6.0\Lab_3_fix.dll
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\bin\Debug\net6.0\Lab_3_fix.pdb
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.csproj.AssemblyReference.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.AssemblyInfoInputs.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.AssemblyInfo.cs
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.csproj.CoreCompileInputs.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.dll
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\refint\Lab_3_fix.dll
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.pdb
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\Lab_3_fix.genruntimeconfig.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_3_fix\Lab_3_fix\obj\Debug\net6.0\ref\Lab_3_fix.dll

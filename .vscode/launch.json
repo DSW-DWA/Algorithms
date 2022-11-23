@@ -1,6 +1,6 @@
 {
     "version": "0.2.0",
-    "configurations": [
+    "configurations": [   
         {
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Lab 2/bin/Debug/net6.0/Lab 2.dll",
+            "program": "${workspaceFolder}/Lab 3/bin/Debug/net6.0/Lab 3.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Lab 2",
+            "cwd": "${workspaceFolder}/Lab 3",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
