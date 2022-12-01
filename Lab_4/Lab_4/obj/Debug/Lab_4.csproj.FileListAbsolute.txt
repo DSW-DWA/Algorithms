@@ -1,0 +1,7 @@
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_4\Lab_4\bin\Debug\Lab_4.exe
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_4\Lab_4\bin\Debug\Lab_4.pdb
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_4\Lab_4\obj\Debug\Lab_4.csproj.AssemblyReference.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_4\Lab_4\obj\Debug\Lab_4.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_4\Lab_4\obj\Debug\Lab_4.csproj.CoreCompileInputs.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_4\Lab_4\obj\Debug\Lab_4.exe
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lab_4\Lab_4\obj\Debug\Lab_4.pdb

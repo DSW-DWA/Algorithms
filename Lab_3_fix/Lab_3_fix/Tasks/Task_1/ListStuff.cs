@@ -5,7 +5,6 @@ public class ListStuff
     public static void Debug() 
     {
         var list = new List();
-        list.Print(); // пустая строка
         list.AddFirst(3);
         list.AddFirst(2);
         list.AddFirst(1);
@@ -19,7 +18,14 @@ public class ListStuff
         list.AddFirst(1);
         list.Print(); // 1 2 3
         list.Delete(2,3);
-        list.Print(); // 1 
-
+        list.Print(); // 1 3
+        
+        list.AddFirst(2);
+        
+        list.Print(); // 2 1 3
+        list.Reverse();
+        list.Print(); // 3 1 2
+        
+        Console.WriteLine(list.GetMinValue());
     }
 }
