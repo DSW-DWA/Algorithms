@@ -76,58 +76,19 @@ namespace Lab_4.Builders
         public static Node CreatTreeOfArithmeticExpression(string expression)
         {
             if (expression == null || expression.Length == 0)
-                return null;
+            {
+                throw new Exception("Пустая строка");
+            }
+
             if (expression[0] != '(')
             {
-                expression += ")";
-                expression = "(" + expression;
-            }
-            var stack = new Stack<Object>();
-
-            for (int i = 0; i < expression.Length; i++)
-            {
-                var current = expression[i];
-
-                var isCloseBracket = current == ')';
-
-                if (!isCloseBracket)
-                {
-                    stack.Push(current);
-                }
-                else
-                {
-                    if (stack.Count < 4)
-                        return null;
-
-                    var operand2 = stack.Pop();
-                    var operatorChar = stack.Pop();
-                    var operand1 = stack.Pop();
-                    var openBracket = (char)stack.Pop();
-
-                    if (openBracket != '(' ||
-                        !checkOperand(operand2) ||
-                        !checkOperand(operand1) ||
-                        !checkOperator(operatorChar)
-                       )
-                    {
-                        return null;
-                    }
-
-                    var root = new Node(operatorChar.ToString());
-                    root.Left = (operand1.GetType() == typeof(Node)) ? (Node)operand1 : new Node(operand1.ToString());
-                    root.Right = (operand2.GetType() == typeof(Node)) ? (Node)operand2 : new Node(operand2.ToString());
-
-                    stack.Push(root);
-                }
+                expression = $"({expression})";
             }
 
-            if (stack.Count > 1 || stack.Count == 0)
-                return null;
-
-            return (Node)stack.Pop();
+            return  _CreatTreeOfArithmeticExpression(expression);
         }
 
-        public static Node tmp(string s)
+        private static Node _CreatTreeOfArithmeticExpression(string s)
         {
             if (s[0] != '(')
             {
@@ -182,8 +143,8 @@ namespace Lab_4.Builders
                     }
                 }
                 var node = new Node(s[indOp].ToString());
-                node.Left = tmp(leftNum);
-                node.Right = tmp(rightNum);
+                node.Left = _CreatTreeOfArithmeticExpression(leftNum);
+                node.Right = _CreatTreeOfArithmeticExpression(rightNum);
                 
                 return node;
             }
