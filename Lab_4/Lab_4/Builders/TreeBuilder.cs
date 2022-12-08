@@ -80,73 +80,59 @@ namespace Lab_4.Builders
                 throw new Exception("Пустая строка");
             }
 
-            if (expression[0] != '(')
-            {
-                expression = $"({expression})";
-            }
-
             return  _CreatTreeOfArithmeticExpression(expression);
         }
 
         private static Node _CreatTreeOfArithmeticExpression(string s)
         {
-            if (s[0] != '(')
+            var operators = Regex.Matches(s, @"[+*\/-]");
+            if (operators.Count == 0)
             {
                 return new Node(s);
             }
             else
             {
-                var indOp = -1;
-                var operators = Regex.Matches(s,@"[+*\/-]");
-                foreach (var ind in operators)
-                {
-                    var match = (Match)ind;
-                    var i = match.Index;
-                    if (s[i - 1] != '(')
-                    {
-                        indOp = i;
-                        break;
-                    }
-                }
-                var leftNum = "";
-                var rightNum = "";
-                for (var i = 1; i < indOp; i++)
-                {
-                    if (s[i] != '(' && s[i] != ')')
-                    {
-                        leftNum += s[i];
-                    }
-                }
-                for (var i = indOp + 1; i < s.Length; i++)
-                {
-                    if (s[i] != '(' && s[i] != ')')
-                    {
-                        rightNum += s[i];
-                    }
-                }
-                var operatorsLeft = Regex.Matches(leftNum, @"[+*\/-]");
-                foreach (Match o in operatorsLeft)
-                {
-                    if (o.Index != 0 && o.Value != '-'.ToString())
-                    {
-                        leftNum += ")";
-                        leftNum = "(" + leftNum;
-                    }
-                }
-                var operatorsRight = Regex.Matches(rightNum, @"[+*\/-]");
-                foreach (Match o in operatorsRight)
-                {
-                    if (o.Index != 0 && o.Value != '-'.ToString())
-                    {
-                        rightNum += ")";
-                        rightNum = "(" + rightNum;
-                    }
-                }
-                var node = new Node(s[indOp].ToString());
-                node.Left = _CreatTreeOfArithmeticExpression(leftNum);
-                node.Right = _CreatTreeOfArithmeticExpression(rightNum);
-                
-                return node;
+               var indOp = -1;
+               var operatorsInBrackets = Regex.Matches(s, @"\(((.*?)[+*\/-](.*?))\)");
+               foreach (Match @operator in operators)
+               {
+                   var flag = false;
+                   foreach (Match operatorsInBracket in operatorsInBrackets)
+                   {
+                       var checkOp = Regex.Match(operatorsInBracket.Value, @"[+*\/-]");
+                       if (@operator.Index == (operatorsInBracket.Index + checkOp.Index))
+                       {
+                           flag = true;
+                           break;
+                       }
+                   }
+                   if (flag) continue;
+                   indOp = @operator.Index;
+                   break;
+               }
+
+               var leftNum = "";
+               var rightNum = "";
+               for (var i = 0; i < indOp; i++)
+               {
+                   if (s[i] != '(' && s[i] != ')')
+                   {
+                       leftNum += s[i];
+                   }
+               }
+
+               for (var i = indOp + 1; i < s.Length; i++)
+               {
+                   if (s[i] != '(' && s[i] != ')')
+                   {
+                       rightNum += s[i];
+                   }
+               }
+               var node = new Node(s[indOp].ToString());
+               node.Left = _CreatTreeOfArithmeticExpression(leftNum);
+               node.Right = _CreatTreeOfArithmeticExpression(rightNum);
+
+               return node;
             }
         }
 
