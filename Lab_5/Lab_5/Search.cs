@@ -53,15 +53,10 @@ namespace Lab_5
         {
             for (var i = 0; i < a.Length; i++)
             {
-                if (a[i] == b) 
-                    return i;
-                else if (i == a.Length - 1)
-                {
-                    return a[i];
-                }
+                if (a[i] == b) return i;
             }
 
-            return null;
+            return a[a.Length - 1];
         }
 
         public static void BinarySearch(int M, int N)
