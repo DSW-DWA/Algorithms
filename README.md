@@ -1,2 +1,2 @@
 # Algorithms
-Laboratory work of the University course of Algorithms 
+Laboratory works of the University course of Algorithms 
