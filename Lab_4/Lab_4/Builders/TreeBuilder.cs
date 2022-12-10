@@ -58,21 +58,6 @@ namespace Lab_4.Builders
         
             return node;
         }
-        private static bool checkOperand(Object operand)
-        {
-            if (operand.GetType() == typeof(Node))
-                return true;
-
-            var number = (char)operand;
-            return Operands.IndexOf(number) != -1;
-        }
-
-        private static bool checkOperator(Object operatorChar)
-        {
-            var arithmetic = (char)operatorChar;
-
-            return Operators.IndexOf(arithmetic) != -1;
-        }
         public static Node CreatTreeOfArithmeticExpression(string expression)
         {
             if (expression == null || expression.Length == 0)
