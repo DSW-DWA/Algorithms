@@ -29,57 +29,57 @@ namespace Lab_7
         }
         public static void Tests(int N)
         {
-            // var rawArray1 = GenerateRandomArrayWithAdditional(N);
-            // var start = DateTime.Now;
-            // var ans1 = BubbleSort(rawArray1);
-            // var end = DateTime.Now;
-            // Console.WriteLine($"Время работы сортировки пузырьком {(end-start).Ticks} при N = {N}");
-            
-            // var rawArray2 = GenerateRandomArrayWithAdditional(N);
-            // start = DateTime.Now;
-            // var ans2 = ShakerSort(rawArray2);
-            // end = DateTime.Now;
-            // Console.WriteLine($"Время работы шейкер сортировки {(end-start).Ticks} при N = {N}");
-            //
-            // var rawArray3 = GenerateRandomArrayWithAdditional(N);
-            // start = DateTime.Now;
-            // var ans3 = ChoiceSort(rawArray3);
-            // end = DateTime.Now;
-            // Console.WriteLine($"Время работы сортировки выбором {(end-start).Ticks} при N = {N}");
-            //
-            // var rawArray4 = GenerateRandomArrayWithAdditional(N);
-            // start = DateTime.Now;
-            // var ans4 = InsertSort(rawArray4);
-            // end = DateTime.Now;
-            // Console.WriteLine($"Время работы сортировки вставками {(end-start).Ticks} при N = {N}");
-            //
-            // var rawArray5 = GenerateRandomArrayWithAdditional(N);
-            // start = DateTime.Now;
-            // var ans5 = InsertBinSort(rawArray5);
-            // end = DateTime.Now;
-            // Console.WriteLine($"Время работы сортировки бин. вставками {(end-start).Ticks} при N = {N}");
-            
-            var rawArray5 = GenerateRandomArray(N);
+            var rawArray1 = GenerateRandomArrayWithAdditional(N);
             var start = DateTime.Now;
-            var ans5 = ShellSort(rawArray5,2);
+            var ans1 = BubbleSort(rawArray1);
             var end = DateTime.Now;
+            Console.WriteLine($"Время работы сортировки пузырьком {(end-start).Ticks} при N = {N}");
+            
+            var rawArray2 = GenerateRandomArrayWithAdditional(N);
+            start = DateTime.Now;
+            var ans2 = ShakerSort(rawArray2);
+            end = DateTime.Now;
+            Console.WriteLine($"Время работы шейкер сортировки {(end-start).Ticks} при N = {N}");
+            
+            var rawArray3 = GenerateRandomArrayWithAdditional(N);
+            start = DateTime.Now;
+            var ans3 = ChoiceSort(rawArray3);
+            end = DateTime.Now;
+            Console.WriteLine($"Время работы сортировки выбором {(end-start).Ticks} при N = {N}");
+            
+            var rawArray4 = GenerateRandomArrayWithAdditional(N);
+            start = DateTime.Now;
+            var ans4 = InsertSort(rawArray4);
+            end = DateTime.Now;
+            Console.WriteLine($"Время работы сортировки вставками {(end-start).Ticks} при N = {N}");
+            
+            var rawArray5 = GenerateRandomArrayWithAdditional(N);
+            start = DateTime.Now;
+            var ans5 = InsertBinSort(rawArray5);
+            end = DateTime.Now;
+            Console.WriteLine($"Время работы сортировки бин. вставками {(end-start).Ticks} при N = {N}");
+            
+            var rawArray12 = GenerateRandomArray(N);
+            var start1 = DateTime.Now;
+            var ans12 = ShellSort(rawArray12,2);
+            var end1 = DateTime.Now;
             Console.WriteLine($"Время работы сортировки Шелла {(end-start).Ticks} при N = {N} и M = {2}");
             
             var rawArray6 = GenerateRandomArray(N);
             start = DateTime.Now;
-            var ans6 = ShellSort(rawArray5,4);
+            var ans6 = ShellSort(rawArray6,4);
             end = DateTime.Now;
             Console.WriteLine($"Время работы сортировки Шелла {(end-start).Ticks} при N = {N} и M = {4}");
             
             var rawArray7 = GenerateRandomArray(N);
             start = DateTime.Now;
-            var ans7 = ShellSort(rawArray5,9);
+            var ans7 = ShellSort(rawArray7,9);
             end = DateTime.Now;
             Console.WriteLine($"Время работы сортировки Шелла {(end-start).Ticks} при N = {N} и M = {9}");
             
             var rawArray8 = GenerateRandomArray(N);
             start = DateTime.Now;
-            var ans8 = ShellSort(rawArray5,16);
+            var ans8 = ShellSort(rawArray8,16);
             end = DateTime.Now;
             Console.WriteLine($"Время работы сортировки Шелла {(end-start).Ticks} при N = {N} и M = {16}");
         }
