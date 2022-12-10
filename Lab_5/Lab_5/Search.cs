@@ -37,7 +37,7 @@ namespace Lab_5
                 var ans = LineSearchWithBarrier(a.ToArray(), r.Next(-2 * N, 2 * N));
             }
             var end = DateTime.Now;
-            Console.WriteLine($"Время работы линейного поиска c бареьром при M = {M} N = {N}: {(end-start).Ticks}");
+            Console.WriteLine($"Время работы линейного поиска c барьером при M = {M} N = {N}: {(end-start).Ticks}");
         }
 
         private static int? LineSearch(int[] a, int b)
