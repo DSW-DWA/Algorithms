@@ -13,7 +13,7 @@ namespace Lab_4
             var leafCount = tree.LeafCount();
             Console.WriteLine($"Колл-во листьев в дереве: {leafCount}");
 
-            var tree1 = new Tree(TreeBuilder.CreatTreeOfArithmeticExpression("(1*2)+(3*4)"));
+            var tree1 = new Tree(TreeBuilder.CreatTreeOfArithmeticExpression("((1*2)+(3*4))"));
             tree1.Print();
             Console.WriteLine(TreeBuilder.SolveExpressionTree(tree1.Root));
         }

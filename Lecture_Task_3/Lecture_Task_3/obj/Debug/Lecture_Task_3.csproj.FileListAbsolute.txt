@@ -1,0 +1,7 @@
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lecture_Task_3\Lecture_Task_3\bin\Debug\Lecture_Task_3.exe
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lecture_Task_3\Lecture_Task_3\bin\Debug\Lecture_Task_3.pdb
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lecture_Task_3\Lecture_Task_3\obj\Debug\Lecture_Task_3.csproj.AssemblyReference.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lecture_Task_3\Lecture_Task_3\obj\Debug\Lecture_Task_3.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lecture_Task_3\Lecture_Task_3\obj\Debug\Lecture_Task_3.csproj.CoreCompileInputs.cache
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lecture_Task_3\Lecture_Task_3\obj\Debug\Lecture_Task_3.exe
+C:\Users\HP Demo\OneDrive\Рабочий стол\Учеба\СиАКОД\Algoritms\Lecture_Task_3\Lecture_Task_3\obj\Debug\Lecture_Task_3.pdb
