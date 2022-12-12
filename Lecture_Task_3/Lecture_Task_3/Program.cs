@@ -36,7 +36,7 @@ namespace Lecture_Task_3
             byte [] bytes = new byte[encoded.Length / 8 + ( encoded.Length % 8 == 0 ? 0 : 1 )];
             encoded.CopyTo( bytes, 0 );
             File.WriteAllBytes(Path.Combine(Directory.GetCurrentDirectory(), "../../result.bin"),bytes);
-            Console.WriteLine($"Битовое предстваление закодированной строки записано в папку проекта в файл result.bin");
+            Console.WriteLine($"Битовое представление закодированной строки записано в папку проекта в файл result.bin");
             
         }
     }
