@@ -10,6 +10,7 @@ namespace Lecture_Task_3
         {
             Console.WriteLine("Введите строку:");
             var input = Console.ReadLine();
+            File.WriteAllText("text.txt",input);
             HuffmanTree huffmanTree = new HuffmanTree();
 
             // Создаю дерево Хаффмана
@@ -38,6 +39,10 @@ namespace Lecture_Task_3
             File.WriteAllBytes(Path.Combine(Directory.GetCurrentDirectory(), "../../result.bin"),bytes);
             Console.WriteLine($"Битовое предстваление закодированной строки записано в папку проекта в файл result.bin");
             
+            Console.WriteLine();
+            var fi1 = new FileInfo("text.txt");
+            var fi2 = new FileInfo(Path.Combine(Directory.GetCurrentDirectory(), "../../result.bin"));
+            Console.WriteLine($"Изначальный размер строки (колл-во байт):{fi1.Length}{Environment.NewLine}Размер закадированной строки (колл-во байт):{fi2.Length}{Environment.NewLine}Сэкономили {Math.Round((((double)(fi1.Length - fi2.Length)) / fi1.Length) * 100,2)}% байт");
         }
     }
 }
