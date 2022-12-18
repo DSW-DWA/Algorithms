@@ -8,8 +8,28 @@ namespace Lecture_Task_3
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Введите строку:");
-            var input = Console.ReadLine();
+            // Console.WriteLine("Введите строку:");
+            var input = "";
+            for (var i = 0; i < 16; i++)
+            {
+                input += "a";
+            }
+            for (var i = 0; i < 18; i++)
+            {
+                input += "б";
+            }
+            for (var i = 0; i < 20; i++)
+            {
+                input += "в";
+            }
+            for (var i = 0; i < 22; i++)
+            {
+                input += "г";
+            }
+            for (var i = 0; i < 24; i++)
+            {
+                input += "д";
+            }
             File.WriteAllText("text.txt",input);
             HuffmanTree huffmanTree = new HuffmanTree();
 
@@ -30,6 +50,7 @@ namespace Lecture_Task_3
                 Console.Write((bit ? 1 : 0) + "");
             }
             Console.WriteLine();
+            Console.WriteLine(encoded.Count);
 
             Console.WriteLine($"Раскодированное предстваление: {huffmanTree.Decode(encoded)}");
             
